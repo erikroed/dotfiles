@@ -5,7 +5,7 @@ Remap:
 ```shell
 let mapleader = " "
 
-nnoremap <leader>x :!chmod +x%<CR>
+nnoremap <leader>x :!chmod +x %<CR>
 nnoremap <leader>pv :Vex<CR>
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 ```

@@ -14,7 +14,7 @@ Plug 'junegunn/fzf.vim'
 call plug#end()
 --]]
 
-colorscheme desert
+-- colorscheme desert
 
 vim.g.mapleader = " "
 

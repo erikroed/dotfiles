@@ -1,1 +1,12 @@
-alias vim=nvim
+alias bc='nvim ~/.bashrc'
+ alias bo='nvim ~/.bashrcok'
+ alias k='kubectl'
+ alias ok='cd ~/ok'
+ alias sbc='source ~/.bashrc'
+ alias sd='cd $(find * -type d | fzf)'
+ alias tmuxcapture='tmux capture-pane -pS -1000000 > ~/logs/$(tmux display-message -p "#S").$(date "+%Y-%m-%d%H.%M.%S").term.log'
+ alias tmuxkill='tmux kill-session -t $(tmux display-message -p "#S")'
+ alias tmuxnew='tmux new -s'
+ alias venv='ivenv && lvenv'
+ alias vim='nvim'
+ alias vimconfig='nvim ~/.config/nvim/init.vim'

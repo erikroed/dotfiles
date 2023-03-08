@@ -1,5 +1,5 @@
 require("roed.set")
--- require("roed.remap")
+require("roed.remap")
 
 --[[
 call plug#begin()

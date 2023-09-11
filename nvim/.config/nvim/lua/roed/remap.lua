@@ -1,20 +1,20 @@
+-- Set leader key
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
-end)
+-- Key mappings
+vim.api.nvim_set_keymap("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+vim.api.nvim_set_keymap("n", "<leader>pv", ":Ex<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader><leader>", ":so %<CR>", { noremap = true, silent = true })
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+vim.api.nvim_set_keymap("n", "<C-k>", "<cmd>cnext<CR>zz", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-j>", "<cmd>cprev<CR>zz", { noremap = true, silent = true })
 
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.api.nvim_set_keymap("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { noremap = true, silent = true })
 
-vim.keymap.set("x", "<leader>p", "\"_dP")
-vim.keymap.set("n", "<leader>y", "\"+y")
-vim.keymap.set("v", "<leader>y", "\"+y")
-vim.keymap.set("n", "<leader>Y", "\"+Y")
+vim.api.nvim_set_keymap("x", "<leader>p", "\"_dP", { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>y", "\"+y", { noremap = true })
+vim.api.nvim_set_keymap("v", "<leader>y", "\"+y", { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>Y", "\"+Y", { noremap = true })
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.api.nvim_set_keymap("x", "J", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("x", "K", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })

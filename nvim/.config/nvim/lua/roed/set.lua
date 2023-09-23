@@ -16,3 +16,8 @@ vim.opt.scrolloff = 8
 vim.opt.termguicolors = true
 
 vim.g.mapleader = " "
+
+
+vim.g.lsp_zero_ui_float_border = 'none'
+vim.g.lsp_zero_ui_signcolumn = 0
+vim.g.lsp_zero_api_warnings = 0

@@ -4,12 +4,17 @@ return {
     { "folke/neoconf.nvim", cmd = "Neoconf" },
     { "rose-pine/neovim", name = "rose-pine" },
     { 'nvim-treesitter/playground' },
-    { 'theprimeagen/harpoon' },
     { 'mbbill/undotree' },
     { 'tpope/vim-fugitive' },
     { 'nvim-telescope/telescope.nvim', tag = '0.1.3', dependencies = { 'nvim-lua/plenary.nvim' } },
     { "williamboman/mason.nvim" },
     { "williamboman/mason-lspconfig.nvim" },
+    { "christoomey/vim-tmux-navigator" },
+    { 
+        'theprimeagen/harpoon',
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    },
     { 
         'nvim-treesitter/nvim-treesitter', build = ":TSUpdate", config = function()
             require("nvim-treesitter.install").update({ with_sync = true })
